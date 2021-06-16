@@ -1,0 +1,67 @@
+<!-- Card -->
+
+      <div class="container">
+    <div class="row">
+        <div class="col">
+             {{#each Writtenwork}}
+
+          
+         
+<div class="card col-md-4 card-style card-today" style="width: 18rem;">
+  
+  <div class="card-body">
+<form class="today-form " action="/class-work" method="post" enctype="multipart/form-data">
+         
+    <div class="form-group">
+      <p>{{this.work}}</p>
+    <label class="heading content-head"for="">{{this.head}}</label>
+     <input type="file" class="form-control" name="head" >
+    <input type="text" name="studentId" value="{{../students}}" hidden>
+      <input type="text" name="workId" value="{{this._id}}" hidden>
+       <input type="text" name="works" value="{{this.head}}" hidden>
+  </div>
+  
+    
+  <button type="submit" class="btn btn-success mt-4">Submit</button>
+          </form> 
+     
+  </div>
+  
+</div>
+
+          {{/each}} 
+
+          {{#each Pdf}}
+          
+         
+<div class="card col-md-4 card-style card-today" style="width: 18rem;">
+  
+  <div class="card-body">
+         <form class=" today-form" action="/class-work" method="post" enctype="multipart/form-data" id="send-pdf">
+      <div class="form-group">
+          <a class="open-pdf" href="/uploads/{{this._id}}.{{this.file}}"><i class="fas fa-file-pdf"></i></a>
+    <label class="heading content-head"for="">{{this.topic}}</label>
+     <input type="file" class="form-control" name="head" >
+    <input type="text" name="studentId" value="{{../students}}" hidden>
+      <input type="text" name="workId" value="{{this._id}}" hidden>
+       <input type="text" name="works" value="{{this.topic}}" hidden>
+  </div>
+    
+   <button type="submit" class="btn btn-success mt-4">Submit</button>
+            </form> 
+    
+
+
+     
+  </div>
+  
+</div>
+
+  
+          {{/each}}
+        </div>
+    </div>
+</div>
+<script>
+ 
+</script>

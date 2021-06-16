@@ -1,0 +1,170 @@
+body{
+  background-color:hsl(0, 0%, 98%); 
+  scroll-padding-top: 7rem;
+ margin:0;
+ padding: 0;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+  background-size: cover;
+  
+ 
+ 
+ background-image: url('data:image/jpeg;base64,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');
+}
+/**created navbar**/
+ .navbar-nav .nav-link {
+  color: rgb(168, 177, 42);
+  font-weight: bold;
+}
+  .logo{width: 3rem;}
+  .main{background-color:#0b9c90;
+   width: 100%;
+   position:fixed;
+   top:0;
+   z-index: 100;}
+  .textclr{color: white;
+     font-weight:500;
+     font-size: large;
+      margin-left: 2rem;}
+ 
+
+/**setting background for landing page**/
+.landbackgound{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6M3VYws0eOcY70mNLBd3QNIU0NU2eddIHVw&usqp=CAU');
+  opacity: 2px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/**side navbar**/
+.section0{
+position: relative;
+}
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position:fixed;
+  z-index: 1;
+  
+  left: 0;
+  background-color: #0b9c90;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #0e0d0d;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*landing page*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  margin-left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.indicate:hover .image {
+  opacity: 0.3;
+  
+  
+}
+
+.indicate:hover .middle {
+  opacity: 1;
+}
+
+.button{
+  background-color: #4CAF50;
+  color: white;
+  
+  padding: 10px 32px;
+}
+.indicate{
+  margin-top:10%;
+}
+/*cards*/
+
+.section1{
+  padding-top:7rem;
+  position: relative;
+}
+/**login validation**/
+.invalid{
+  color:white;
+}
+/**student otp**/
+@import '~js-datepicker/dist/datepicker.min.css';
+
+/** month display**/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

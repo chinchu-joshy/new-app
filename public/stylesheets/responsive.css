@@ -1,0 +1,373 @@
+@media (max-width:350px){
+    .indicate {
+        margin-top: 20%;
+        margin-left: 20%;
+    }
+    .sidebar{
+        visibility: hidden;
+    }
+    .nav-item{
+        visibility: visible;
+    }
+    .logoutt{
+        visibility: hidden;
+    }
+    .emp-profile{
+        margin-top: 2.5rem;
+        
+    }
+    .sec2{
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    .sec1{
+        height: 70px;
+    }
+    .sec1 .row{
+        margin-left: 0px;
+        padding-left: 0%;
+    }
+    .navbar{
+        margin-left: 0px;
+        padding-left: 0%;
+    }
+    
+    .loggdiv{
+        height: 0px;
+    }
+    .btn{
+        width: 63px;
+        font-size: small;
+        font-weight: bold;
+        color: rgb(221, 221, 230);
+        background-color: rgb(8, 28, 41);
+       
+    }
+    
+    .john{
+        font-size: small;
+        font-weight: bold;
+    }
+    .onchng{
+        width: 20px;
+    }
+    .change{
+        font-size: small;
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+    .table td, .table th {
+        padding: .5rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        color: white;
+        font-size: small;
+    }
+    .finddate{
+        margin-top: 1rem;
+    }
+    .find{
+        margin-top: 1rem;
+    }
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 3px;
+        margin-bottom: 0;
+        
+        list-style: none;
+        background-color: white;
+        width: 300px;
+    }
+    .nav-link{
+        font-size: small;
+    }
+    .table{
+       
+        margin-top: 10px;
+    }
+    .tab-class{
+        margin-left: 1px;
+    }
+    .tab-classes{
+        margin-left: 1px;
+        margin-top: 4rem;
+    }
+    .class-works{
+        font-size: large;
+        margin-top: 4rem;
+        color: white;
+    }
+    .class-workss{
+        font-size: large;
+        margin-top: 4rem;
+        color: white;
+      }
+    
+    .class-work{
+        font-size: large;
+      
+        color: white;
+    }
+    .student-detete{
+        margin-left: 0px;
+    }
+    .view-upload{
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+    }
+    .view-dwnld{
+        align-items: center;
+        
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      .swipe{
+          visibility: visible;
+          color: white;
+      }
+      .add-student{
+       
+          margin-top: 5rem;
+         
+      }
+      .attendhead{
+        background-color:rgb(17, 17, 56);
+        margin-top: 5rem;
+        width: 100%;
+      }
+      .card-style{
+        width: 13rem;
+      }
+      .background-form{
+      
+        width: 13rem;
+        
+      }
+      form {
+        padding: 5px;
+        
+        margin-top:5rem
+      }
+      .teacher-payhead{
+        
+        margin-top: 6rem;
+      } 
+      .cropped{
+        width: 200px;
+        margin-left: 20px;
+       
+      }
+      .uploadedImage{
+        width: 100px; height:100px;
+      }
+      .croppedImage{
+        width: 200px; height:200px;
+      }
+      .otp-position{
+        margin-top: 1rem;
+        margin-left:40%;
+      }
+      #login-form{
+          margin-top: 1rem;
+          margin-left: 0px;
+          color: white;
+      }
+      
+      .student-login .container{
+          padding-left: 0%;
+          color: white;
+      }
+      .text-info{
+          color: white;
+      }
+      #login .container #login-row #login-column #login-box {
+        max-width: 600px;
+        width: fit-content;
+        border: 1px solid #9C9C9C;
+        background-color: #EAEAEA;
+      }
+      .vi {border-left: 6px solid #0b9c90;
+        border-radius: 1rem;
+        height: 200px;
+        overflow:scroll;
+       
+        border-top-style: groove;
+        border-top-color:#0b9c90 ;
+        border-bottom-style: groove;
+        border-bottom-color:#0b9c90;
+        border-right: 6px solid#0b9c90;
+        
+      }
+      .card-today{
+        float: left;
+        margin: 1rem;
+      } 
+}
+@media (min-width:350px){
+    .vi {border-left: 6px solid #0b9c90;
+        border-radius: 1rem;
+        height: 500px;
+        overflow:scroll;
+       
+        border-top-style: groove;
+        border-top-color:#0b9c90 ;
+        border-bottom-style: groove;
+        border-bottom-color:#0b9c90;
+        border-right: 6px solid#0b9c90;
+        
+      }
+    .student-login{
+        margin: 0;
+      padding: 0;
+      background-color:#0b9c90;
+      height: 100vh;
+      }
+    #login .container #login-row #login-column #login-box {
+  
+        max-width: 600px;
+        height: 400px;
+        border: 1px solid #9C9C9C;
+        background-color: #EAEAEA;
+      }
+      #login .container #login-row #login-column #login-box #login-form {
+        padding: 20px;
+      }
+      #login .container #login-row #login-column #login-box #login-form #register-link {
+        margin-top: -70px;
+      }
+    .otp-position{
+        margin-top: 1rem;
+        margin-left:45%;
+      }
+    .sec1{
+        height: 60px;
+    }
+    #navbarNav{
+        visibility: hidden;
+    }
+    .profile-img{
+        width:180px;height:180px
+    }
+    .finddate{
+        margin-top: 2rem;
+    }
+    .table{
+        margin-left: 2rem;
+        margin-top: 5rem;
+        
+    }
+    .tab-class{
+        margin-left: 5rem;
+    }
+    .tab-classes{
+        margin-left: 5rem;
+    }
+    .table{
+  
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      .view-dwnld{
+        align-items: center;
+        margin-left: 47%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      .view-upload{
+        align-items: center;
+        margin-left: 47%;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+      }
+      .swipe{
+          visibility: hidden;
+
+      }
+      .add-student{
+        margin-left: 50%;
+          margin-top: 1rem;
+         
+      }
+      .attendhead{
+        margin-left: 25%;background-color:rgb(17, 17, 56);
+        margin-top:2rem
+      }
+      .card-style{
+        width: 18rem
+      }
+      .btn{
+        width: 100px;
+        font-size: smaller;
+        color: rgb(221, 221, 230);
+        background-color: rgb(7, 34, 49);
+       
+       
+    }
+    .eventbtn{
+        margin-left: 45%;
+
+    }
+    .view-upldss{
+        margin-left: 8rem;
+        margin-top: 1rem;
+    }
+    .background-form{
+        background-color: #e8f0ef;
+        
+      }
+      form {
+        padding: 20px;
+        margin-left: 15%;
+        margin-top:2rem
+      }
+      .upload-box{
+        margin-top: .5rem;
+        }
+        .teacher-payhead{
+            margin-left: 42%;
+            margin-top: 5rem;
+          } 
+          .watchevent{
+              margin-left: 5rem;
+          }
+          .class-workss{
+            font-size: large;
+            margin-top: 5rem;
+            color: white;  
+          }
+          .crop{
+            align-items: center;
+            margin-left: 25%;
+          }
+          .uploadcropp{
+            margin-top: 1rem;
+            margin-left: 500px;
+          }
+          .resultcropped{
+            margin-top: 1rem;
+           
+          }
+          .cropped{
+            width: 300px; height:300px;
+           margin-left: 200px;
+          }
+          .uploadedImage{
+            width: 500px; height:500px;
+          }
+          .croppedImage{
+            width: 300px; height:300px;
+          }
+          .card-today{
+            float: left;
+            margin: 1rem;
+            width: 17rem
+          } 
+
+}
+
+
+    

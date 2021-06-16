@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6   col-12 watchevent">
+             <h3 class=" class-workss" style="color: rgb(240, 240, 245);">List fo students paid for the event</h3>
+              <ul class="list-group">
+           
+           
+          
+              
+          
+           <li class="list-group-item mt-2" style="color: rgb(182, 35, 35);">{{paytm.name}} 
+          
+  
+  
+   {{#each paypal}}
+           
+           
+              
+          
+           <li class="list-group-item mt-2" style="color: rgb(168, 24, 24);" >{{this.name}} 
+          
+  
+  {{/each}}
+   {{#each raz}}
+           
+           
+              
+          
+           <li class="list-group-item mt-2" style="color: rgb(168, 24, 24);" >{{this.student}} 
+          
+  
+  {{/each}}
+
+</ul>
+        </div>
+    </div>
+</div>

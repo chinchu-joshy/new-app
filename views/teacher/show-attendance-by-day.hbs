@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="col">
+    <h2 class="  teacher-payhead">ATTENDANCE LIST</h2>
+  </div>
+    <div class="col-md-12 ml-5 tab-class ">
+
+    
+    <table class="table mt-5 ml-2">
+      <thead class="table-design" >
+    <tr >
+      
+      
+      
+        <th scope="col"class="student-details">Student</th>
+        <th scope="col"class="student-details">Attendance</th>
+       
+       
+       
+    </tr>
+  </thead>  
+    <tbody>
+   
+        {{#each students}}
+        <tr>
+     
+       <td class="student">{{this.student}}</td>
+      
+       <td class="student">{{this.attendance}}</td>
+    
+   
+     
+       
+      
+    
+    </tr>
+   {{/each}}
+    </tbody>
+    </table>
+    </div>
+    
+</div>

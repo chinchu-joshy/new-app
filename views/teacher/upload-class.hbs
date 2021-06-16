@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="row">
+        
+            <div class="col-md-6 upload-box">
+       <form class="background-form vc" action="/student-class" method="post" enctype="multipart/form-data">
+       <div class="form-group">
+    
+    <input type="text" class="form-control" name="head" id="content" placeholder="Type heading" required >
+   
+  </div>
+  <div class="form-group" >
+    <label  class="heading"for="video" style="color: rgb(238, 162, 162);">Upload Video</label>
+     <input type="file" class="form-control"  name="upload" id="video" >
+    
+  </div>
+  <button type="submit" class="btn btn-success mt-4" id="send" > Submit</button>
+  </form> 
+  
+    </div>
+    <div class="col-12 view-dwnld">
+<h2 class="class-work" style="color: white;">Class Videos</h2>
+    </div>
+    <div class="col-md-12  tab-class">
+
+    
+    <table class="table  ml-2 table-responsive-md ">
+      <thead class="table-design" >
+    <tr >
+      
+      
+      
+        <th scope="col"class="student-details">Topic</th>
+        <th scope="col"class="student-details">Date</th>
+       <th scope="col"class="student-details">View</th>
+       
+       
+    </tr>
+  </thead>  
+    <tbody>
+   
+        {{#each video}}
+        <tr>
+     
+       <td class="student">{{this.main}}</td>
+      
+      
+    
+   
+     
+       <td class="student">{{this.date}}</td>
+      
+      
+    <td>
+      
+       <a class="open-pdf" href="/video/{{this._id}}.mp4"><i class="fas fa-video"></i></a>
+    </td>
+    </tr>
+   {{/each}}
+    </tbody>
+    </table>
+    </div>
+    
+     
+        
+    </div>
+</div>
+
+
+</script>

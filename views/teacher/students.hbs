@@ -1,0 +1,54 @@
+<section>
+<div class="container">
+  <div class="row">
+   <div class="add-learner"> <a href="/add-student" class="btn btn-success add-students">Add students</a></div>
+    
+    <div class="col-md-12 col-12  ">
+ <table class="table mt-5 ml-2 table-responsive-md ">
+  <thead class="table-design" >
+    <tr >
+       <th class="student-details">Roll no</th>
+      <th class="student-details">Image</th>
+      <th scope="col"class="student-details">Name</th>
+      <th scope="col"class="student-details">Mobile</th>
+      <th scope="col"class="student-details">Email</th>
+      <th scope="col"class="student-details">Attendence</th>
+      
+       <th scope="col"class="student-details">Edit</th>
+       <th scope="col"class="student-details">Delete</th>
+       
+    </tr>
+  </thead>
+  <tbody>
+      {{#each students}}
+    <tr>
+     
+      <th class="student"scope="row">{{this.rollnumber}}</th>
+      <td ><a href="/viewassignment/{{this.name}}"><img style="width:50px;height:50px"
+       src="/images/{{this._id}}.jpg"></a></td>
+      <td class="student">{{this.name}}</td>
+      <td class="student">{{this.mobile}}</td>
+      <td class="student" >{{this.email}}</td>
+      <td class="student">{{this.attendance}}</td>
+      
+    
+      
+      <td >
+        <a href="/edit-student/{{this._id}}" class="btn btn-primary">Edit</a>
+        </td>
+        <td>
+        <a href="/delete-student/{{this._id}}" class="btn btn-danger"
+         onclick="return confirm('are you want to delete {{this.name}} ?')">Delete</a>
+        </td>
+        
+        
+    </tr>
+    {{/each}}
+   
+  </tbody>
+</table>
+    </div>
+  </div>
+</div>
+</section>
+

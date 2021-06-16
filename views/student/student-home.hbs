@@ -1,0 +1,69 @@
+<section class="section1">
+<div class="container ">
+    <div class="row">
+        <div class="col-md-6  vi col-12">
+           <h3 style="color: white;">Events</h3>
+          <a href="/index">dd</a>
+           <ul class="list-group">
+ 
+   {{#each payevents}}
+  <li class="list-group-item"><i class="far fa-clock"style="color: blue;" ></i>
+     {{this.date}}
+     <br>{{this.main}} <br >
+  <span style="color: red;">Event price: Rs.{{this.amount}}</span>
+  <br>
+  {{#if this.file}}
+  <a class="open-pdf"  href="/events/{{this.file}}"><i class="fas fa-images"></i></a>
+  <a class="open-pdf"  href="/events/{{this._id}}.pdf"><i class="fas fa-file-pdf"></i></a>
+     <a class="open-pdf"  href="/events/{{this._id}}.mp4"><i class="fas fa-video"></i></a>
+  </li>
+     {{/if}}
+  {{/each}}
+  {{#each events}}
+
+     <li class="list-group-item"><i class="far fa-clock" style="color: blue;"> {{this.date}}</i><br>{{this.main}} 
+  
+  {{#if this.file}}
+ <a class="open-pdf"  href="/events/{{this._id}}.jpg"><i class="fas fa-images"></i></a>
+   <a class="open-pdf"  href="/events/{{this._id}}.pdf"><i class="fas fa-file-pdf"></i></a>
+     <a class="open-pdf"  href="/events/{{this._id}}.mp4"><i class="fas fa-video"></i></a>
+     </li>
+     {{/if}}
+  {{/each}}
+  
+</ul>
+
+        </div>
+         <div class="col-md-6  vi col-12">
+             <h3 style="color: white;">Notice board</h3>
+              <ul class="list-group">
+           {{#each announcement}}
+           
+           {{#if this.file}}
+
+          <li class="list-group-item"><i class="far fa-clock" style="color: green;"> {{this.date}}</i>
+           {{this.main}}
+          <br>
+        
+        <a class="open-pdf"  href="/announcement/{{this._id}}.jpg"><i class="fas fa-images"></i></a>
+       <a class="open-pdf" href="/announcement/{{this._id}}.pdf"><i class="fas fa-file-pdf"></i></a>
+       <a class="open-pdf" href="/announcement/{{this._id}}.mp4"><i class="fas fa-video"></i></a>
+
+          </li>
+              
+          {{else}}
+           <li class="list-group-item"><i class="far fa-clock" style="color: green;"> {{this.date}}</i><br>{{this.main}} </li>
+          
+  {{/if}}
+  {{/each}}
+</ul>
+        </div>
+    </div>
+</div>
+
+ 
+</section>
+
+
+   
+</script>

@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="col">
+    <h2 class="  teacher-payhead class-work" style="color: white;">PAYMENT DETAILS</h2>
+  </div>
+    <div class="col-md-12  tab-class ">
+
+    
+    <table class="table mt-5 ml-2 table-responsive-md  ">
+      <thead class="table-design" >
+    <tr >
+      
+      
+      
+        <th scope="col"class="student-details">Event</th>
+        <th scope="col"class="student-details">See Pyment Details</th>
+       
+       
+       
+    </tr>
+  </thead>  
+    <tbody>
+   
+        {{#each events}}
+        <tr>
+     
+       <td class="student">{{this.main}}</td>
+      
+      
+    
+   
+     
+       <td class="student"><a  href="/watch-payments/{{this._id}}" class="btn btn-success">View</a></td>
+      
+      
+    
+    </tr>
+   {{/each}}
+    </tbody>
+    </table>
+    </div>
+    
+</div>

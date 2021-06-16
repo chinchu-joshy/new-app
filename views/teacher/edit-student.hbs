@@ -1,0 +1,45 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+               <form class="background-form" action="/edit-student/{{students._id}}" method="post" enctype="multipart/form-data">
+   <div class="form-group">
+    <label class="heading"for="">Roll no</label>
+    <input type="text" class="form-control" name="rollnumber" value="{{student.rollnumber}}">
+  <div class="form-group">
+    <label class="heading"for="">Name</label>
+    <input type="text" class="form-control" name="name" value="{{students.name}}">
+   
+  </div>
+  <div class="form-group">
+    <label class="heading" for="">Mobile</label>
+    <input type="tel" class="form-control" name="mobile"value="{{students.mobile}}">
+  </div>
+  
+  <div class="form-group ">
+ <label class="heading" for="">Email</label>
+    <input type="email" class="form-control" name="email"value="{{students.email}}">
+  
+</div>
+<div class="form-group">
+    <label  class="heading" for="">Attendance</label>
+    <input type="text" class="form-control" name="attendance"value="{{students.attendance}}">
+  </div>
+<div class="form-group">
+    <label  class="heading"for="">Active backlogs</label>
+    <input type="text" class="form-control" name="activebacklogs"value="{{students.activebacklogs}}">
+  </div>
+  <div class="form-group">
+    <label class="heading" for="">CGPU</label>
+    <input type="text" class="form-control" name="cgpu"value="{{students.cgpu}}">
+  </div>
+  <div class="form-group">
+    <label  class="heading"for="">Image</label>
+    <input type="file" class="form-control"  name="Image">
+  </div>
+  <button type="submit" class="btn btn-success mt-4 eventbtn">Submit</button>
+  </form> 
+            </div>
+        </div>
+    </div>
+</section>

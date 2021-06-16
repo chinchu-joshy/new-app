@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+    <div class="col-sm-4 text-center abc">
+        <!-- Default form login -->
+        <form action="/login" method="POST">
+            <p class="h4 mb-4 text-left">Login to continue</p>
+            {{#if login}}
+            <p class="invalid  mb-4 text-left false">Invalid username or password</p>
+            {{/if}}
+             <!-- Email --> <label for="mail" class="in">Name</label> 
+             <input type="text" id="defaultLoginFormEmail" class="form-control mb-4" 
+             placeholder="Enter Username" name="Name" value="John George"> 
+              
+             <label for="pass" class="in"></label>
+              <label for="pass" class="in">Password</label>
+             <input type="password" id="defaultLoginFormPassword" class="form-control mb-4"
+              placeholder="Enter Password" name="Password" value="g@123">
+            <div class="d-flex justify-content-left">
+                <div>
+                    <!-- Remember me -->
+                   
+                </div>
+            </div> <!-- Sign in button --> <button class="btn btn-info btn-block button1 " type="submit" 
+            style=" background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMPZGKWkjGad8bUw9lyKv1qFAuGdzVHNK7NA&usqp=CAU)">LOGIN</button> 
+            <button class="btn btn-info btn-block my" type="submit">Forgot Password?</button>
+        </form>
+    </div>
+    <div class="col-sm-8 xyz text-center style" 
+   > 
+    <i class="fa fa-user-circle fa-5x" aria-hidden="true"></i>
+        <h2 class="" style="color: rgb(11, 11, 65);">Welcome to XYZ School Kerala</h2>
+        
+        
+    </div>
+</div>
+</div>

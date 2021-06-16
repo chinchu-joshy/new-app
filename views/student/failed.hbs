@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        {{#if value}}
+        <h2 style="color: red;">Payment Cancelled</h2>
+        <br>
+        <a href="/student-login" class="btn btn-danger failed">Back To My page</a>
+        {{else}}
+
+        <h2 style="color: red;">{{val}}</h2>
+        <br>
+        <a href="/student-login" class="btn btn-danger failed">Back To My page</a>
+        {{/if}}
+    </div>
+</div>

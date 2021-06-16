@@ -1,0 +1,165 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+   
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .student-card{
+    width:fit-content;
+  }
+  .student-otp{
+    padding-left: 30%;
+    
+  }
+  .otp-form{
+    margin:2%;
+  }
+  
+  .otp-otp{
+    margin-left: 1.5rem;
+    
+  }
+  .false{
+    color:rgb(197, 43, 43);
+  }
+  
+  .collapse-content .fa.fa-heart:hover {
+    color: #f44336 !important;
+  }
+  .collapse-content .fa.fa-share-alt:hover {
+    color: #0d47a1 !important;
+  }
+  .promoting-card{
+margin-top: 4rem;
+margin-left: 20%;
+font-size: smaller;
+  }
+  .message-box{
+    font-size: smaller;
+  }
+  .card-font{
+    font-size: smaller;
+  }
+  .back{
+    background-color:#0b9c90;
+   
+  }
+  .form-control{
+    width: 100%;
+    border-radius: 1px;
+  }
+  .card-color{
+    color: white;
+  }
+ 
+  /**login student**/
+  
+  
+  .study-materials{
+    margin-top: 5rem;
+  }
+  .myvideo{
+    margin-top: 5rem;
+    margin-left:10rem;
+    
+  }
+  
+  .vdobtn{
+    width: max-content;
+  }
+  table.ui-datepicker-calendar tbody td.highlight > a {
+    background: url("images/ui-bg_inset-hard_55_ffeb80_1x100.png") repeat-x scroll 50% bottom #FFEB80;
+    color: #363636;
+    border: 1px solid #FFDE2E;
+}
+
+.final_semana a{
+  color:red !important;
+}  
+
+/* class para modificar a cor do eventos */
+  table.ui-datepicker-calendar tbody td.highlight > a {
+  color: red;
+} 
+table.ui-datepicker-calendar tbody td.highlights > a {
+  color: rgb(17, 219, 125);
+} 
+#eventos{
+  font-size:18px;
+  color:black;
+  text-decoration: none;
+}
+.raz{
+  
+  vertical-align: top;
+  
+ 
+ 
+width: 3rem;
+}
+.paypal{
+
+ 
+  vertical-align: top;
+  width: 3rem;
+   
+  
+}
+.ptm{
+  
+  vertical-align: top;
+  width: 3rem;
+   
+  
+}
+.selectbox{
+  align-items: center;
+ 
+  float: left;
+}
+
+.main-card{
+  width: 350px;
+}
+.login-card{
+  width: 300px;
+}
+.gallery-head{
+  color: rgb(19, 19, 163);
+  margin-left: 40%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+.failed{
+  margin-left: 43%;
+  margin-top: 2rem;
+}

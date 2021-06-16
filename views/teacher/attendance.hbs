@@ -1,0 +1,56 @@
+<div class="container">
+  
+    <div class="row">
+      <div class="col-md-12 finddate ">
+     <form action="/find-attendance" method="POST" >
+       <input type="date" name="date" > 
+       <button type="submit" style="width: max-content;" class="find">Find</button>
+     </form>
+      </div>
+      
+       
+            <div class="col-md-12  tab-class">
+
+    
+    <table class="table mt-5 ml-2 table-responsive-md">
+      <thead class="table-design" >
+    <tr >
+      
+      
+      
+        <th scope="col"class="student-details">Student</th>
+        <th scope="col"class="student-details">Attendance</th>
+       
+       <th scope="col"class="student-details">Date</th>
+        
+       <th>
+         
+       </th>
+       
+    </tr>
+  </thead>  
+    <tbody>
+   
+        {{#each status}}
+        <tr>
+     
+       <td class="student">{{this.student}}</td>
+      
+      
+    
+   
+     
+       <td class="student">{{this.attendance}}</td>
+      
+      <td class="student">{{this.Date}}</td>
+    
+    </tr>
+   {{/each}}
+    </tbody>
+    </table>
+    </div>
+    
+     
+        
+    </div>
+</div>

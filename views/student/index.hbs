@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <input type="text" name="content" id="just">
+    <button  id="sample" onclick="check()">sample</button>
+    </div>
+  </div>
+</div>
+<script>
+  var socket=io()
+  function check(){
+let value="sample";
+
+   socket.on("message",value);
+  }
+</script>

@@ -1,0 +1,87 @@
+<div class="container uploads">
+  <div class="row">
+    <div class="col-12 view-upload ">
+<a href="/view-uploads" class="btn btn-danger" >View Uploads</a>
+    </div>
+     <div class="col-12 view-dwnld">
+<h2 class="class-work" style="color: white;">Class works</h2>
+    </div>
+    <div class="col-md-6 upload-box">
+       <form class="background-form vc" action="/student-work" method="post" enctype="multipart/form-data">
+   <div class="form-group">
+    
+    <input type="text" class="form-control" name="head" placeholder="Type heading" required>
+   
+  </div>
+  <div class="form-group">
+   
+    <input type="text" class="form-control" name="work"placeholder="Enter the works" required >
+   
+  </div>
+  <div class="form-group">
+    <label class="heading"for="" style="color: rgb(238, 163, 163);">Due date</label>
+    <input type="date" class="form-control" name="workdate" required >
+   
+  </div>
+  <button type="submit" class="btn btn-success mt-4">Submit</button>
+  </form> 
+    </div>
+    <div class="col-md-6 upload-box">
+       
+  <form class="background-form vc" action="/student-work-pdf" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    
+    <input type="text" class="form-control" name="head" placeholder="Type heading" required>
+   
+  </div>
+  <div class="form-group">
+    <label  class="heading"for="" style="color: rgb(240, 157, 157);">Upload PDF</label>
+    <input type="file" class="form-control"  name="wrk" required multiple>
+  </div>
+  <div class="form-group">
+    <label class="heading"for="" style="color: rgb(241, 138, 138);">Due date</label>
+    <input type="date" class="form-control" name="pdfdate" required>
+   
+  </div>
+  <button type="submit" class="btn btn-success mt-4">Submit</button>
+  </form> 
+    </div>
+    <div class="col-12 view-dwnld">
+<h2 class="class-work" style="color: white;">Upload materials</h2>
+    </div>
+    
+   <div class="col-md-6 upload-box">
+       <form class="background-form vc" action="/student-link" method="post" enctype="multipart/form-data">
+       <div class="form-group">
+    
+    <input type="text" class="form-control" name="head" placeholder="Type the heading" required >
+   
+  </div>
+  <div class="form-group">
+    <label  class="heading"for="" style="color: rgb(245, 150, 150);">Upload links</label>
+    <input type="url" class="form-control"  name="link" required>
+    
+  </div>
+  <button type="submit" class="btn btn-success mt-4">Submit</button>
+  </form> 
+  
+    </div>
+    <div class="col-md-6 upload-box">
+       <form class="background-form vc" action="/student-pdf" method="post" enctype="multipart/form-data">
+       <div class="form-group">
+   
+    <input type="text" class="form-control" name="head" placeholder="Type the heading" required >
+   
+  </div>
+  <div class="form-group" >
+    <label  class="heading"for="" style="color: rgb(236, 142, 142);">Upload media and pdf</label>
+    <input type="file" class="form-control"  name="uploadpdf"  >
+    
+  </div>
+  <button type="submit" class="btn btn-success mt-4" > Submit</button>
+  </form> 
+  
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container">
+<div class="row my-5">
+      <div class="col-md-4 offset-md-4">
+        <div class="card main-card mt-5">
+          <div class="card-body login-card">
+            <form class="" action="/paynow" method="post">
+              <div class="form-group">
+                <label for="">Name: </label>
+                <input class="form-control" type="text" name="username" value="">
+              </div>
+              <div class="form-group">
+                <label for="">Email: </label>
+                <input class="form-control" type="email" name="email" value="">
+              </div>
+              <div class="form-group">
+                <label for="">Phone: </label>
+                <input class="form-control" type="text" name="phone" value="">
+              </div>
+                <div class="form-group">
+                <label for="">Amount: </label>
+                
+                 <input class="form-control" type="text" name="price" value="{{event.amount}}">
+                 <input type="text" name="event" value="{{event.main}}" hidden>
+                  <input type="text" name="id" value="{{event._id}}" hidden>
+              </div>
+              <div class="form-group">
+                <button class="btn form-control btn-primary">Pay Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

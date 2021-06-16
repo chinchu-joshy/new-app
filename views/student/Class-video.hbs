@@ -1,0 +1,56 @@
+
+      
+        {{#each notepdf}}
+       
+           
+              <video class="myvideo" id="{{this._id}}" width="320" height="176" controls>
+                  <source src="/video/{{this._id}}.mp4" type="video/mp4">
+                      
+  
+</video>
+
+      <span id="{{this.main}}"> </span> 
+
+ <button class="vdobtn" onclick="myFunction('{{this._id}}','{{this.main}}','{{../name}}')" type="button">
+     Mark as done:{{this.main}}</button><br>
+   
+    {{/each}}
+<script>
+
+
+function myFunction(id,topic,name) { 
+    //console.log(id)
+    let vid = document.getElementById(id);
+  //alert(vid.currentTime);
+ 
+   if(vid.ended){
+        var status='present';
+        document.getElementById(topic).innerHTML="completed"
+       
+       
+   }else{
+       var status='absent';
+      document.getElementById(topic).innerHTML="Not completed"
+   }
+ $.ajax({
+        url:'/watch-video',
+        data:{
+          attendance:status,
+          student:name,
+          topic:topic
+        },
+        method:'post',
+        success:(response)=>{
+          //alert(response)
+           if(response.attendance=='present'){
+              alert("Successfully completed")
+            // document.getElementById(topic).innerHTML="completed"
+           }else{
+            //  document.getElementById(topic).innerHTML="Not completed"
+             //document.getElementById('total').innerHTML=response.total
+            alert("Not completed !!!!")
+           }
+        }
+      })
+} 
+</script> 

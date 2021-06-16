@@ -1,0 +1,94 @@
+<div class="container">
+   <div class="col">
+       <h3 style="color: rgb(242, 242, 247);" class="teacher-payhead ">Upload Photos...</h3>
+   </div>
+<div class="col-12 col-md-6 crop">
+<input type="file" name="fileUpload" id="fileUpload" class=" ">
+<div id="uploadedImage" style="" class="ml-5 uploadcropp"></div>
+</div>
+<hr>
+<div  style="" class=" col-md-6 cropped">
+    <img id="croppedImage" style="" class="cropped" >
+
+    <button type="submit"  id="cropButton" class=" btn cropped" >crop</button>
+</div>
+<div class="col-md-8">
+<div id="cropResult"></div>
+</div>
+  
+  
+  
+</div>
+
+
+
+
+<script>
+    const uploadImageDiv=document.getElementById('uploadedImage');
+    const fileUpload=document.getElementById('fileUpload');
+    fileUpload.addEventListener('change',getImage,false);
+    let cropper = null;
+    const cropButton=document.getElementById('cropButton');
+    cropButton.addEventListener('click',cropImage);
+    let myGreatImage=null;
+        const croppedImage=document.getElementById('croppedImage');
+    function getImage(){
+        console.log("images",this.files[0]);
+        const imageToProcess=this.files[0];
+        let newImg =new Image(imageToProcess.width,imageToProcess.height);
+        newImg.src=URL.createObjectURL(imageToProcess);
+        newImg.id="myGreatImage";
+        uploadImageDiv.style.border="4px solid black";
+        uploadImageDiv.appendChild(newImg);
+        myGreatImage=document.getElementById('myGreatImage')
+        processImage();
+    }
+    function processImage(){
+      
+        cropper=new Cropper(myGreatImage,{
+            aspectRatio:16/9,
+            crop(event){
+                console.log(event)
+                
+                const canvas=this.cropper.getCroppedCanvas();
+                croppedImage.src=canvas.toDataURL('image/png');
+            }
+        })
+    }
+    function cropImage(){
+       let imgUrl=cropper.getCroppedCanvas().toDataURL();
+       
+       cropper.getCroppedCanvas().toBlob(function(blob){
+        url = URL.createObjectURL(blob);
+       
+        var reader = new FileReader();
+			reader.readAsDataURL(blob);
+            reader.onloadend = function(){
+				var base64data = reader.result;
+				console.log(base64data)
+                $.ajax({
+					url:'/upload-img',
+					method:'POST',
+					data:{
+                       
+                        image:base64data
+                        
+                        },
+					success:function(data)
+					{
+						alert('Uploaded successfully')
+                        location.href='/addimage'
+					}
+				});
+				
+			};
+       })
+        const val=imgUrl.split(',')[1]
+        
+        const img=document.createElement('img');
+        img.src=imgUrl;
+        document.getElementById('cropResult').appendChild(img)
+
+    }
+     
+</script>
